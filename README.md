@@ -1,5 +1,22 @@
 ## Aleo Testnet3 Multiple GPU Prover
 
+Make sure you have install Nvidia driver and cuda toolkit
+for install cuda toolkit please flow : (here is cudatoolkit 11.8 for ubuntu 20.04)
+https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=runfile_local
+
+after download run file, execute below command:
+```
+sudo sh cuda_11.8.0_520.61.05_linux.run
+```
+flow prompt, make sure unselect driver, only install toolkit
+
+after install cuda toolkit, run below to check:
+```
+nvcc --version
+nvidia-smi
+```
+make sure all info output correct.
+
 Extrat ubuntu.tgz:
 ```
 tar -xvzf ./ubuntu.tgz
